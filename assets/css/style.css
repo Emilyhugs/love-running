@@ -138,6 +138,10 @@ flex-basis:200px; flex-grow:1; /*Creates a grid of meetup times divs over the ba
             color:#fafafa;
         }
 
+        /*Gallery Page*/
+        #photos img {width:100%; line-height:}
+        #photos {line-height: 0;}
+
 /* Footer */
 #social-networks {
     text-align: center;
