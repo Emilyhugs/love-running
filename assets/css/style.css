@@ -139,7 +139,7 @@ flex-basis:200px; flex-grow:1; /*Creates a grid of meetup times divs over the ba
         }
 
         /*Gallery Page*/
-        #photos img {width:100%; line-height:}
+        #photos img {width:100%; line-height: 1em;}
         #photos {line-height: 0;}
 
 /* Footer */
@@ -200,6 +200,10 @@ hr {
     justify-content: center;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px)  {
+    #photos {column-count: 2; column-gap: 0;}
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -262,6 +266,8 @@ hr {
         align-self: flex-end;
     }
 
+    /*Gallery*/
+    #photos {column-count:3;}
   
 }
 
@@ -269,6 +275,9 @@ hr {
     #menu a:hover {
         border-bottom: 1px solid #252525;
     }
+
+    /*Gallery*/
+    #photos {column-count:4;}
 
 }
 
@@ -297,6 +306,7 @@ hr {
     #benefits-physical>div {
         align-self: flex-end;
     }
+
 
 
 }
